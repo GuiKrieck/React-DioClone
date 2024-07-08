@@ -1,3 +1,5 @@
+Projeto desenvolvido na Trilha de React Na DIO ministrado pelo professor Pablo Henrique. esse projeto foi desenvolvido juntamente com as aulas. O professor vai deixar um desafio Final para desenvolvermos a tela de cadastro.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
