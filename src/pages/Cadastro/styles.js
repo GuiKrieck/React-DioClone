@@ -5,27 +5,28 @@ export const Container = styled.main`
     width: 100%;
     max-width: 80%;
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 80px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 `
 
 export const Wrapper = styled.div`
-    max-width: 300px;
+    max-width: 500px;
 `
 
 export const Column = styled.div`
-    flex: 1;
+    flex: ${({$flex}) => $flex};
 `
 
 export const Row = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 20px;
     margin-top: 20px;
 `
 
@@ -39,18 +40,7 @@ export const Title = styled.h2`
     line-height: 44px;
     color: #FFFFFF;
 `
-
-export const TitleLogin = styled.p`
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2rem;
-    width: 320px;
-    margin-bottom: 20px;
-    line-height: 44px;
-`
-
-export const SubTitleLogin = styled.p`
+export const SubTitleCadastro = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -58,22 +48,29 @@ export const SubTitleLogin = styled.p`
     margin-bottom: 35px;
     line-height: 25px;
 `
-
-export const EsqueciText = styled.p`
+export const AoClicarText = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: .85rem;
-    line-height: 19px;
-    color: #E5E044;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 320px;
+    margin: 20px 0; 
 `
 
-export const CriarText = styled.p`
+export const JaTenhoText = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: .85rem;
     line-height: 19px;
-    color: #E23DD7;
+`
+
+export const FazerLoginText = styled.p`
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: .85rem;
+    line-height: 19px;
+    color: #00FF00;
     cursor: pointer;
 `

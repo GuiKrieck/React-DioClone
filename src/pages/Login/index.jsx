@@ -1,6 +1,6 @@
 import {MdEmail, MdLock} from "react-icons/md"
-import { useForm } from "react-hook-form";
 import Header from "../../components/Header"
+import { useForm } from "react-hook-form";
 import { yupResolver} from '@hookform/resolvers/yup'
 import * as yup from "yup"
 import { Column, Container, CriarText, EsqueciText, Row, SubTitleLogin, Title, TitleLogin, Wrapper } from "./styles"
@@ -19,7 +19,7 @@ const schema = yup.object({
 const Login = () => {
     const navigate = useNavigate()
 
-    const { control, handleSubmit, formState: { errors, isValid } } = useForm({
+    const { control, handleSubmit, formState: { errors } } = useForm({
         resolver:yupResolver(schema),
         mode: "onChange",
         defaultValues:{
@@ -34,7 +34,7 @@ const Login = () => {
             if (data.length === 1){
                 navigate('/feed')
             }else{
-                alert("Usuário não encontrado, verifica as credenciais e tente denovo")
+                alert("Usuário não encontrado, verifique as credenciais e tente denovo")
             }
         }
         catch{
@@ -62,7 +62,7 @@ const Login = () => {
                         </form>
                         <Row>
                             <EsqueciText>Esqueci Minha Senha</EsqueciText>
-                            <CriarText>Criar Conta</CriarText>
+                            <CriarText onClick={() => navigate("/cadastro")}>Criar Conta</CriarText>
                         </Row>
                     </Wrapper>
                 </Column>

@@ -1,3 +1,13 @@
+# Desafio
+
+[x] Implementar uma página de cadastro
+
+Desafio concluido, Página de cadastro implementada de acordo com o design do figma no link abaixo. Além de implementar a página de cadastro também fiz os links to cabeçalho funcionar e também os textos de "Fazer login" ou "Criar conta" levarem para as páginas certas.
+
+[FIGMA](https://www.figma.com/design/fvjQQNtqaUdpuNixvCZVav/DIO-CLONE?node-id=101-19&t=oNaNxW8VlnK7W3cZ-0)
+
+# Sobre o Projeto
+
 Projeto desenvolvido na Trilha de React Na DIO ministrado pelo professor Pablo Henrique. esse projeto foi desenvolvido juntamente com as aulas. O professor vai deixar um desafio Final para desenvolvermos a tela de cadastro.
 
 # Getting Started with Create React App
